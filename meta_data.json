@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "social network"
+    },
+    "description": "Google People API is the replacement for the deprecated Google Contacts API. This plugin allows you to read an authenticated user's list of contacts, including their Names, Emails, and Phone Numbers.",
+    "image": "//meta-l.cdn.bubble.io/f1689790951629x342057161509362200/Screenshot%202023-07-19%20at%2011.21.42%20AM%20%281%29.png",
+    "license": "open_source",
+    "link": "https://developers.google.com/people",
+    "name": "Google People (Contacts)",
+    "plugin_instructions": "To use this plugin, you'll need to get a Google Account, create a project for your client, and save your OAuth 2.0 Client ID and Client Secret.\n\nNote: to use this API in a live app in production, you'll need to request approval from Google to use the required scopes."
+}

@@ -1,0 +1,37 @@
+{
+    "add_offline": true,
+    "add_to_header": true,
+    "auth": "oauth2_user",
+    "authentication_url": "https://accounts.google.com/o/oauth2/v2/auth",
+    "calls": {
+        "AAC": {
+            "doc_link": "https://developers.google.com/people/api/rest/v1/people.connections/list",
+            "initialized": true,
+            "method": "get",
+            "name": "List Contacts",
+            "params": {
+                "AAD": {
+                    "key": "personFields",
+                    "private": true,
+                    "value": "names,emailAddresses,phoneNumbers",
+                    "visibility": "hidden"
+                },
+                "AAE": {
+                    "key": "pageSize",
+                    "private": true,
+                    "value": "1000"
+                }
+            },
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1689790523679x135934760821194750.plugin_api.AAC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"List Contact\",\"fields\":{\"_p_connections\":{\"ret_value\":\"list.api.1689790523679x135934760821194750.plugin_api.AAC.connections\",\"caption\":\"connections\",\"path\":[\"connections\"]},\"_p_totalPeople\":{\"ret_value\":\"number\",\"caption\":\"totalPeople\",\"sample_value\":4,\"path\":[\"totalPeople\"]},\"_p_totalItems\":{\"ret_value\":\"number\",\"caption\":\"totalItems\",\"sample_value\":4,\"path\":[\"totalItems\"]}}},\"plugin_api.AAC.connections\":{\"caption\":\"List Contacts connection\",\"fields\":{\"_p_resourceName\":{\"ret_value\":\"_ignore\"},\"_p_etag\":{\"ret_value\":\"_ignore\"},\"_p_names\":{\"ret_value\":\"list.api.1689790523679x135934760821194750.plugin_api.AAC.names\",\"caption\":\"names\",\"path\":[\"names\"]},\"_p_emailAddresses\":{\"ret_value\":\"list.api.1689790523679x135934760821194750.plugin_api.AAC.emailAddresses\",\"caption\":\"emailAddresses\",\"path\":[\"emailAddresses\"]},\"_p_phoneNumbers\":{\"ret_value\":\"list.api.1689790523679x135934760821194750.plugin_api.AAC.phoneNumbers\",\"caption\":\"phoneNumbers\",\"path\":[\"phoneNumbers\"]}}},\"plugin_api.AAC.names\":{\"caption\":\"List Contacts name\",\"fields\":{\"_p_metadata.primary\":{\"ret_value\":\"boolean\",\"caption\":\"metadata primary\",\"sample_value\":true,\"path\":[\"metadata\",\"primary\"]},\"_p_metadata.source.type\":{\"ret_value\":\"text\",\"caption\":\"metadata source type\",\"sample_value\":\"CONTACT\",\"path\":[\"metadata\",\"source\",\"type\"]},\"_p_metadata.source.id\":{\"ret_value\":\"_ignore\"},\"_p_displayName\":{\"ret_value\":\"text\",\"caption\":\"displayName\",\"sample_value\":\"Bilbo Baggins\",\"path\":[\"displayName\"]},\"_p_familyName\":{\"ret_value\":\"text\",\"caption\":\"familyName\",\"sample_value\":\"Baggins\",\"path\":[\"familyName\"]},\"_p_givenName\":{\"ret_value\":\"text\",\"caption\":\"givenName\",\"sample_value\":\"Bilbo\",\"path\":[\"givenName\"]},\"_p_displayNameLastFirst\":{\"ret_value\":\"text\",\"caption\":\"displayNameLastFirst\",\"sample_value\":\"Baggins, Bilbo\",\"path\":[\"displayNameLastFirst\"]},\"_p_unstructuredName\":{\"ret_value\":\"_ignore\"}}},\"plugin_api.AAC.emailAddresses\":{\"caption\":\"List Contacts emailAddresse\",\"fields\":{\"_p_metadata.primary\":{\"ret_value\":\"boolean\",\"caption\":\"metadata primary\",\"sample_value\":true,\"path\":[\"metadata\",\"primary\"]},\"_p_metadata.source.type\":{\"ret_value\":\"text\",\"caption\":\"metadata source type\",\"sample_value\":\"CONTACT\",\"path\":[\"metadata\",\"source\",\"type\"]},\"_p_metadata.source.id\":{\"ret_value\":\"_ignore\"},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"sample_value\":\"shzhjdal@sharklasers.com\",\"path\":[\"value\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"work\",\"path\":[\"type\"]},\"_p_formattedType\":{\"ret_value\":\"_ignore\"}}},\"plugin_api.AAC.phoneNumbers\":{\"caption\":\"List Contacts phoneNumber\",\"fields\":{\"_p_metadata.primary\":{\"ret_value\":\"boolean\",\"caption\":\"metadata primary\",\"sample_value\":true,\"path\":[\"metadata\",\"primary\"]},\"_p_metadata.source.type\":{\"ret_value\":\"text\",\"caption\":\"metadata source type\",\"sample_value\":\"CONTACT\",\"path\":[\"metadata\",\"source\",\"type\"]},\"_p_metadata.source.id\":{\"ret_value\":\"_ignore\"},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"sample_value\":\"(303) 710-5813\",\"path\":[\"value\"]},\"_p_canonicalForm\":{\"ret_value\":\"text\",\"caption\":\"canonicalForm\",\"sample_value\":\"+13037105813\",\"path\":[\"canonicalForm\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"home\",\"path\":[\"type\"]},\"_p_formattedType\":{\"ret_value\":\"_ignore\"}}}}",
+            "url": "https://people.googleapis.com/v1/people/me/connections"
+        }
+    },
+    "generate_token_from_code_uri": "https://oauth2.googleapis.com/token",
+    "human": "Google People",
+    "oauth_user_data_call": "https://www.googleapis.com/oauth2/v1/userinfo?alt=json",
+    "scope": "https://www.googleapis.com/auth/contacts.readonly email profile"
+}
